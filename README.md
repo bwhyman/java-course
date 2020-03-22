@@ -21,10 +21,6 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
  
 #### Online Java Tutorial
  - https://docs.oracle.com/javase/tutorial/index.html
-
-#### Java Style Guide
- - Google： https://google.github.io/styleguide/javaguide.html
- - 阿里Java开发手册：https://github.com/alibaba/p3c
  
 #### Example Collections
  - /java-examples，课程示例  

@@ -1,17 +1,8 @@
 package com.example08.constructor;
 
-import com.example07.method.Calculation;
-
 public class ConstructorTest {
 
     public static void main(String[] args) {
-        int speed = 10;
-        Bicycle bicycle;
-        bicycle = new Bicycle(5);
-        bicycle.setSpeed(10);
-    }
-
-    /*public static void main(String[] args) {
         System.out.println("--------Constructor--------");
         getBicycle();
         System.out.println("--------Passing Reference Data Type Arguments--------");
@@ -21,7 +12,7 @@ public class ConstructorTest {
         System.out.println("After the method called: " + bicycle.getGear());
         System.out.println("--------Create Objects--------");
         createObjects();
-    }*/
+    }
 
     private static void getBicycle() {
         Bicycle bicycle = new Bicycle(5,15);
