@@ -2,7 +2,7 @@ package com.example20.collection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListTest {
@@ -26,7 +26,11 @@ public class ListTest {
         // removeElement();
         // removeElementByIndex();
         // listToArray();
-        arrayToList();
+        // arrayToList();
+        // iterator();
+        // iteratorRemove();
+
+        removeIf();
     }
 
     /**
@@ -89,7 +93,7 @@ public class ListTest {
      */
     private static void removeElement() {
         for (User u : USERS) {
-            if ("SUN".equals(u.getName())) {
+            if ("BO".equals(u.getName())) {
                 USERS.remove(u);
             }
         }
@@ -113,6 +117,7 @@ public class ListTest {
         }
     }
 
+
     /**
      * 集合转数组
      */
@@ -135,4 +140,41 @@ public class ListTest {
             System.out.println(u.getName());
         }
     }
+
+    /**
+     * 迭代器
+     */
+    private static void iterator() {
+        Iterator<User> iUsers = USERS.iterator();
+        while (iUsers.hasNext()) {
+            User u = iUsers.next();
+            System.out.println(u.getName());
+        }
+    }
+
+    /**
+     * 迭代器移除
+     */
+    private static void iteratorRemove() {
+        Iterator<User> iUsers = USERS.iterator();
+        while (iUsers.hasNext()) {
+            User u = iUsers.next();
+            if ("SUN".equals(u.getName())) {
+                iUsers.remove();
+            }
+        }
+
+        for (User u : USERS) {
+            System.out.println(u.getName());
+        }
+    }
+
+    private static void removeIf() {
+        USERS.removeIf(u -> "SUN".equals(u.getName()));
+
+        for (User u : USERS) {
+            System.out.println(u.getName());
+        }
+    }
+
 }

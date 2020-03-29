@@ -3,6 +3,7 @@ package com.example07.method;
 
 public class PassValueTest {
     public static void main(String[] args) {
+
         String n = "Java";
         int i = 10;
         getPrimitiveData(n, i);
