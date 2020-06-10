@@ -6,9 +6,9 @@ public class Test {
         //A.getS();
         // A.getS();
         //new A();
-        //new B();
+        new B();
         //B.getB();
-       new C(new A());
+       // new C(new A());
     }
 
     /**

@@ -3,6 +3,8 @@
 China, Northeast Forestry University, Software Engineering, java Programming Language, 2020
 
 Java程序设计。此课程为东北林业大学软件工程专业第4学期的一门专业选修课，课程包含32理论学时16实验学时  
+主讲教师：王波老师
+
 课程基于高级语言程序设计(C语言)，以及数据结构知识  
 课程将涵盖封装，继承，多态等基本面向对象知识  
 课程讨论学习Java8-Java11的：Functional Programming，Optional，Stream API，Date-Time API ，NIO，多线程，异常处理等技术知识  
