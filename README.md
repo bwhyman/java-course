@@ -18,7 +18,7 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
 ### Development Environments
  - IntelliJ IDEA Ultimate 2020.3.2(OpenJDK 11.0.9)
  - Git 2.30
- - http://pan-yz.chaoxing.com/share/info/23ef7f334d129996
+ - http://pan-yz.chaoxing.com/share/info/c398fb785ec780f8
 
 ### Documents
  - https://github.com/bwhyman/java-course/wiki
