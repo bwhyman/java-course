@@ -11,6 +11,18 @@ public class StringTest {
         // getReplace();
         // getEquals();
         // getStringBuilder();
+        // geteff();
+
+        String str1 = "hello";
+        String str2 = new String("hello");
+        System.out.println(str1.equals(str2));
+        System.out.println(str1 == str2);
+        String str3 = str1.intern();
+
+        System.out.println(str1 == str2);
+        System.out.println(str1 == str3);
+        System.out.println(str2 == str3);
+
 
     }
 
@@ -103,22 +115,25 @@ public class StringTest {
         System.out.println(builder.toString());
     }
 
+    //  +操作符的字符串拼接底层依然基于stringbuilder。但循环的每次拼接均创建builder对象
     private static void geteff() {
         int n = 100_000;
         long start1 = System.nanoTime();
         String msg = "";
         for (int i = 0; i < n; i++) {
-            msg = msg + i;
+            msg = msg + "学号：" + i + ";";
         }
         long end1 = System.nanoTime();
         System.out.println(end1 - start1);
 
         long start2 = System.nanoTime();
-        StringBuilder b = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            b.append(i);
+            builder.append("学号：").append(i).append(";");
         }
+        String msg2 = builder.toString();
         long end2 = System.nanoTime();
         System.out.println(end2 - start2);
+        System.out.println(msg.equals(msg2));
     }
 }
