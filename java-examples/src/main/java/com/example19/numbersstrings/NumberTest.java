@@ -1,5 +1,5 @@
 package com.example19.numbersstrings;
-
+import java.util.Random;
 public class NumberTest {
     public static void main(String[] args) {
         System.out.println("-------Integer--------");
@@ -53,13 +53,17 @@ public class NumberTest {
         long e2 = System.nanoTime();
         System.out.println(e2 - s2);
     }
-
     private static void getMathRandom() {
         for (int i = 0; i < 5; i++) {
             System.out.println(Math.random() * 10);
         }
         for (int i = 0; i < 5; i++) {
             System.out.println((int)(Math.random() * 10));
+        }
+        
+        Random random = new Random();
+        for (int i = 0; i < 5; i++){
+            System.out.println(random.nextInt(10));
         }
     }
 }
