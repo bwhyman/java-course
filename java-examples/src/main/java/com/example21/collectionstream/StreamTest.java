@@ -12,12 +12,7 @@ public class StreamTest {
         Apple a2 = new Apple(2, Apple.Color.GREEN, 250);
         Apple a3 = new Apple(3, Apple.Color.RED, 260);
         Apple a4 = new Apple(4, Apple.Color.GREEN, 230);
-        List<Apple> apples = new ArrayList<>();
-        apples.add(a);
-        apples.add(a2);
-        apples.add(a3);
-        apples.add(a4);
-        return apples;
+        return List.of(a, a2, a3, a4);
     }
 
     public static void main(String[] args) {
@@ -28,7 +23,7 @@ public class StreamTest {
         // sorted();
         // sortedReversed();
         // collect();
-        collectGroupingBy2();
+        // collectGroupingBy2();
     }
 
     /**
@@ -122,7 +117,7 @@ public class StreamTest {
     private static void collect() {
         APPLES.stream()
                 .map(Apple::getColor)
-                .collect(Collectors.toSet())
+                .collect(Collectors.toList())
                 .forEach(System.out::println);
 
     }

@@ -1,4 +1,4 @@
-package com.example25.initialorder;
+package com.example24.initialorder;
 
 public class C {
     private A a = null;

@@ -1,4 +1,4 @@
-package com.example29.io;
+package com.example30.io;
 
 public class MyResource implements AutoCloseable{
     @Override

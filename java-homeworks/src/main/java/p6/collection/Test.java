@@ -32,17 +32,17 @@ public class Test {
     private static void toMap(Set<User> users) {
         Map<String, Set<User>> map = new HashMap<>();
         for (User u : users) {
-            Set<User> set = map.getOrDefault(u.getCity(), new HashSet<>());
+            /*Set<User> set = map.getOrDefault(u.getCity(), new HashSet<>());
             set.add(u);
-            map.put(u.getCity(), set);
-            /*Set<User> set = map.get(u.getCity());
-            if (set == null) {
-                set = new HashSet<>();
-                map.put(u.getCity(), set);
+            map.put(u.getCity(), set);*/
+            /*String city = u.getCity();
+            if (map.get(city) == null) {
+                map.put(city, new HashSet<>());
             }
-            set.add(u);*/
+            map.get(city).add(u);*/
+            // 基于键返回map中对应的值；没有则执行第2参数的函数，注入键创建值，并将键值对置于map，并返回值
+            map.computeIfAbsent(u.getCity(), k -> new HashSet<>())
+                    .add(u);
         }
     }
-
-
 }
