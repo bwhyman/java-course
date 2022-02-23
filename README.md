@@ -18,17 +18,24 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
  - 为Web应用/企业级微服务应用/移动端跨平台应用等开发技术提供支持
 
 ### Development Environments
- - IntelliJ IDEA Ultimate 2020.3.2(OpenJDK 11.0.9)
+ - IntelliJ IDEA Ultimate 2020.3.2(OpenJDK 11)
  - Git 2.30
- - http://pan-yz.chaoxing.com/share/info/c398fb785ec780f8
 
 ### Documents
  - https://github.com/bwhyman/java-course/wiki
 
-### Online Java Tutorials
+### Online Tutorials
  - https://docs.oracle.com/javase/tutorial/index.html
+ - https://mooc1.chaoxing.com/course/217339173.html
  
 ### Example Collections
  - /java-examples，课程示例  
  - /java-experiments，课程实验  
  - /java-homeworks，课程作业
+
+### Related Courses  
+
+- https://github.com/bwhyman/java-course
+- https://github.com/bwhyman/springboot-course
+- https://github.com/bwhyman/vite-vue3-examples
+- https://github.com/bwhyman/flutter_examples

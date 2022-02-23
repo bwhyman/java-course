@@ -11,8 +11,9 @@ public class FlowTest {
     }
 
     /**
-     * 为什么是发布者关联订阅者？
-     * 事件通知架构，例如android，都是订阅者关联发布者，发布者不关心订阅者
+     * 为什么是发布者关联订阅者呢？
+     * 事件通知架构，例如android，是订阅者关联发布者，发布者不关心订阅者，为什么flow倒置了关系？
+     * 由消费者控制生产者的生产速度，这样才能支持背压Backpressure
      *
      * @throws InterruptedException
      */
