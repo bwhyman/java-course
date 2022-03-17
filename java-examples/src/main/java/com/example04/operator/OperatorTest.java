@@ -14,6 +14,8 @@ public class OperatorTest {
         System.out.println("------------");
         getConditional();
         System.out.println("------------");
+        getShortCircuiting();
+        System.out.println("------------");
         getTernaryOperator();
         System.out.println("------------");
         getComput();
@@ -119,6 +121,20 @@ public class OperatorTest {
         } else {
             System.out.println("false");
         }
+    }
+
+    /**
+     * 短路
+     */
+    private static void getShortCircuiting() {
+        int v1 = 10;
+        int v2 = 11;
+        if((v1 > 5) && (v2 > v1++)) {}
+        System.out.println(v1);
+        int v3 = 10;
+        int v4 = 11;
+        if((v3 > 15) && (v4 > ++v3)) {}
+        System.out.println(v3);
     }
     /**
      * 三元运算符
