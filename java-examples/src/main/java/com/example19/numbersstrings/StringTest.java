@@ -1,8 +1,10 @@
 package com.example19.numbersstrings;
 
+import javax.swing.plaf.basic.BasicViewportUI;
+
 public class StringTest {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+        // stringEquals()
         // getStringLiteral();
         // getConcatenatingStrings();
         // getConvertingStringsToNumbers();
@@ -12,7 +14,10 @@ public class StringTest {
         // getEquals();
         // getStringBuilder();
         // geteff();
+        stringSplicingTest();
+    }
 
+    private static void stringEquals() {
         String str1 = "hello";
         String str2 = new String("hello");
         System.out.println(str1.equals(str2));
@@ -22,8 +27,6 @@ public class StringTest {
         System.out.println(str1 == str2);
         System.out.println(str1 == str3);
         System.out.println(str2 == str3);
-
-
     }
 
     private static void getStringLiteral() {
@@ -135,5 +138,14 @@ public class StringTest {
         long end2 = System.nanoTime();
         System.out.println(end2 - start2);
         System.out.println(msg.equals(msg2));
+    }
+
+    private static void stringSplicingTest() {
+        int n1 = 10;
+        int n2 = 20;
+        System.out.println(n1 + n2);
+        System.out.println("Total: " + n1 + n2);
+        // 由于括号的优先级高，因此先执行计算，后按字符串拼接
+        System.out.println("Total: " + (n1 + n2));
     }
 }
