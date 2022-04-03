@@ -41,6 +41,8 @@ public class StringTest {
         System.out.println(h1.length());
         System.out.println(o1.length());
 
+        System.out.println("欢迎访问".length());
+
     }
 
     private static void getConcatenatingStrings() {

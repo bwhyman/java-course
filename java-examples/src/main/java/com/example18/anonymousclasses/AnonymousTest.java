@@ -6,12 +6,13 @@ public class AnonymousTest {
     }
     private static void getAnonymous() {
         Student s1 = new Student("BO");
-        s1.setLearnable(new Learnable() {
+        Learnable l1 = new Learnable() {
             @Override
             public void read() {
                 System.out.println("我要按自己的方式阅读");
             }
-        });
+        };
+        s1.setLearnable(l1);
         System.out.println(s1.getLearnable());
         s1.getLearnable().read();
 
