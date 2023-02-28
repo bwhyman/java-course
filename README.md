@@ -7,19 +7,19 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
 
 课程基于高级语言程序设计(C语言)，以及数据结构知识  
 课程将涵盖封装/继承/多态等基本面向对象知识  
-课程基于Java17学习讨论：
+课程基于Java 17学习讨论：
 - Functional Programming/Optional/Stream API/Date-Time API/Files/Concurrency/Exceptions等基础技术知识
 - 以及，CompletableFuture异步非阻塞编程/NIO Selector多路复用/NIO SocketChannel异步非阻塞网络编程/Flow反应式编程等技术知识
 
 ### Course Objectives
  - 掌握基本Java编程规范
  - 掌握基本的面向对象程序设计思想
- - 掌握多种设计模式的意义及实现
+ - 掌握理解多种设计模式的意义及实现
  - 为Web应用/企业级微服务应用/移动端跨平台应用等开发技术提供支持
 
 ### Development Environments
  - IntelliJ IDEA Ultimate
- - OpenJDK17
+ - OpenJDK 17
  - Git
 
 ### Online Tutorials

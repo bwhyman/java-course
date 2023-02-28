@@ -6,7 +6,7 @@
 
 网课/软件下载网址
 
-https://mooc1-1.chaoxing.com/course/208047689.html
+https://mooc1.chaoxing.com/course/217339173.html
 
 课程基于以下软件及版本：
 
@@ -89,14 +89,24 @@ Idea已集成maven插件，但其默认配置不适于开发。因此，通过�
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
     <mirrors>
         <mirror>
+            <id>huaweicloud</id>
+            <mirrorOf>central</mirrorOf>
+            <url>https://repo.huaweicloud.com/repository/maven/</url>
+        </mirror>
+        <mirror>
             <id>aliyunmaven</id>
-            <mirrorOf>*</mirrorOf>
+            <mirrorOf>central</mirrorOf>
             <name>阿里云公共仓库</name>
             <url>https://maven.aliyun.com/repository/public</url>
         </mirror>
+        <mirror>
+            <id>nexus-tencentyun</id>
+            <mirrorOf>central</mirrorOf>
+            <name>Nexus tencentyun</name>
+            <url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
+        </mirror>
     </mirrors>
     <localRepository>D:/m2/repository</localRepository>
-
 </settings>
 ```
 

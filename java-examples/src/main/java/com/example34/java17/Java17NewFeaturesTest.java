@@ -12,21 +12,38 @@ public class Java17NewFeaturesTest {
      * switch，支持无需公共变量直接返回值；箭头函数无需break；yield声明局部返回值
      */
     private static void getSwitch(int number) {
+        String r = "";
+        switch (number) {
+            case 1:
+                r = "test1";
+                break;
+            case 2:
+                r = "test2";
+                break;
+            case 3:
+                r = "test3";
+                break;
+            default:
+                r = "";
+        }
+
         String result = switch (number) {
             case 1 -> "test1";
             case 2 -> "test2";
             case 3, 4 -> "test3";
-            default -> "default";
+            default -> "";
         };
-
+        // 可通过yield关键词，返回分支值
         String result2 = switch (number) {
             case 1:
+                System.out.println("TODO");
                 yield "test1";
             case 2: {
+                System.out.println("TODO");
                 yield "test2";
             }
             default:
-                yield "default";
+                yield "";
         };
     }
 
