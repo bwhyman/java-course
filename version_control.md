@@ -2,6 +2,8 @@
 
 课程全部代码将推送到GitHub，建议了解基本git/github的使用方法
 
+[视频：基于Git & Github的版本控制](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416970196)
+
 ### Git
 
 **Git必须安装到英文路径，建议仅更改盘符**

@@ -1,17 +1,16 @@
-# Development Environments
-### Preparations
+
+# Preparations
 
 教学群下载2个文件准备。ideaIU-X.win.zip，settings.xml。  
 
 不要着急运行idea，按以下步骤配置！~
 
-### Maven & Settings
+# Maven & Settings
 
-了解什么是Maven:  
-https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416968558
+[视频：了解什么是Maven](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416968558)  
 
-Maven Settings的本地配置:  
-https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=726850150
+
+[视频：Maven的本地配置](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=726850150)
 
 Maven是当前主流的Java项目构建管理工具
 
@@ -52,12 +51,12 @@ Idea已集成maven插件，但其默认配置不适于开发。因此，通过�
 </settings>
 ```
 
-### IntelliJ IDEA
+# IntelliJ IDEA
 **卸载系统中曾经安装过的Oracle JDK。idea已集成openjdk，无需安装**
 
 有以下两种idea激活方法：通过校邮箱申请免费授权，破解激活
 
-#### Free Educational Licenses
+## Free Educational Licenses
 如，校email或教育授权申请失败，只能尝试破解方法激活idea
 
 Idea Ultimate，为功能强大的付费版开发工具，但全球学生均可申请免费授权。
@@ -97,29 +96,29 @@ https://www.jetbrains.com/zh/student/
 
 ![image-20210302142826048](images/Home/image-20210302142826048.png)
 
-#### IDEA Crack
+## IDEA Crack
 教学群下载ja-netfilter-all.zip。解压到合适目录，按激活方法破解激活
 
-### IDEA Maven Settings
-IDEA引入maven settings配置:   
-https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=726862579
+# IDEA Maven Settings
 
-### Maven Java Project
-IDEA创建maven java project:   
-https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416970143
+[视频：IDEA引入maven settings配置](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=726862579)
 
-### Optimizing IntelliJ IDEA
+# Maven Java Project
+
+[视频：IDEA创建maven java project](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416970143)
+
+# Optimizing IntelliJ IDEA
 优化idea开发环境
 
 ![image-20210302143245749](images/Home/image-20210302143245749.png)
 
-#### Code Completion
+## Code Completion
 
 **关闭**代码提示的大小写匹配，提高开发效率
 
 ![image-20201029141538301](images/Home/image-20201029141538301.png)
 
-#### Font Size & Style
+## Font Size & Style
 
 自定义代码字体样式及尺寸
 

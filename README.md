@@ -22,6 +22,12 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
  - OpenJDK 17
  - Git
 
+### Setup Development Environments
+
+[Maven & IDEA 安装配置](./Home.md)
+
+[基于Git & Github的版本控制](./version_control.md)
+
 ### Online Tutorials
  - https://docs.oracle.com/javase/tutorial/index.html
  - https://mooc1.chaoxing.com/course/217339173.html
