@@ -1,4 +1,4 @@
-package com.experiment02;
+package com.experiment02.entity;
 
 public class User {
     private String name;

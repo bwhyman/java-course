@@ -1,4 +1,4 @@
-package com.example11.composition;
+package com.example11.composition.entity;
 
 public class Course {
         private String name;

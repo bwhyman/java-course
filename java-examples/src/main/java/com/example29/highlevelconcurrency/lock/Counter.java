@@ -1,4 +1,4 @@
-package com.example29.highlevelconcurrency;
+package com.example29.highlevelconcurrency.lock;
 
 import java.util.Random;
 import java.util.concurrent.locks.Lock;

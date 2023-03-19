@@ -1,55 +1,15 @@
 
-# Preparations
+# Prerequisites
 
-教学群下载2个文件准备。ideaIU-X.win.zip，settings.xml。  
+教学群/学习通资源，下载2个文件准备。ideaIU-X.win.zip，settings.xml。  
 
 不要着急运行idea，按以下步骤配置！~
 
 # Maven & Settings
 
-[视频：了解什么是Maven](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416968558)  
-
+[视频：Maven](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416968558)
 
 [视频：Maven的本地配置](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=726850150)
-
-Maven是当前主流的Java项目构建管理工具
-
-基于Maven的项目依赖管理，maven首先从本地仓库查找依赖，没有则通过网络从远程仓库下载，因此，**第一次添加某依赖时，保持联网状态**
-
-Idea已集成maven插件，但其默认配置不适于开发。因此，通过自定义maven配置，将maven管理的依赖文件下载到指定目录，同时添加阿里镜像，提高下载速度。
-
-在合适目录，创建名为m2目录。例如，D:\m2
-
-在其下创建repository目录，复制或创建maven配置文件settings. xml
-
-**将localRepository节点，修改为自定义的repository目录地址**
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
-    <mirrors>
-        <mirror>
-            <id>huaweicloud</id>
-            <mirrorOf>central</mirrorOf>
-            <url>https://repo.huaweicloud.com/repository/maven/</url>
-        </mirror>
-        <mirror>
-            <id>aliyunmaven</id>
-            <mirrorOf>central</mirrorOf>
-            <name>阿里云公共仓库</name>
-            <url>https://maven.aliyun.com/repository/public</url>
-        </mirror>
-        <mirror>
-            <id>nexus-tencentyun</id>
-            <mirrorOf>central</mirrorOf>
-            <name>Nexus tencentyun</name>
-            <url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
-        </mirror>
-    </mirrors>
-    <localRepository>D:/m2/repository</localRepository>
-</settings>
-```
 
 # IntelliJ IDEA
 **卸载系统中曾经安装过的Oracle JDK。idea已集成openjdk，无需安装**

@@ -1,4 +1,4 @@
-package com.example29.highlevelconcurrency;
+package com.example29.highlevelconcurrency.localthread;
 
 import java.util.Random;
 

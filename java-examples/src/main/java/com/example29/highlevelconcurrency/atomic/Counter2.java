@@ -1,4 +1,4 @@
-package com.example29.highlevelconcurrency;
+package com.example29.highlevelconcurrency.atomic;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;

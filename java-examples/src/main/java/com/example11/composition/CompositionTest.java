@@ -1,5 +1,9 @@
 package com.example11.composition;
 
+import com.example11.composition.entity.Course;
+import com.example11.composition.entity.Student;
+import com.example11.composition.entity.Teacher;
+
 public class CompositionTest {
     public static void main(String[] args) {
         testCreateCourse();

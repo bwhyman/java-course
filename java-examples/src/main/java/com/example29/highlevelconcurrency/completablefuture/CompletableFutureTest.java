@@ -1,4 +1,4 @@
-package com.example29.highlevelconcurrency;
+package com.example29.highlevelconcurrency.completablefuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
