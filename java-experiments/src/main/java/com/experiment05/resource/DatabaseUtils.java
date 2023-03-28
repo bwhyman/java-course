@@ -31,7 +31,7 @@ public class DatabaseUtils {
         return List.of(s1,s2, s3, s4);
     }
 
-    public static List<Student> getStudents() {
+    public static List<Student> listStudents() {
         return STUDENTS;
     }
 

@@ -7,7 +7,7 @@ import java.util.concurrent.SubmissionPublisher;
 public class FlowTest {
     public static void main(String[] args) throws InterruptedException {
         // test();
-        // test2();
+        test2();
     }
 
     /**
@@ -92,6 +92,7 @@ public class FlowTest {
         for (int i = 0; i < 10; i++) {
             publisher.submit(i);
         }
+        publisher.close();
         latch.await();
     }
 

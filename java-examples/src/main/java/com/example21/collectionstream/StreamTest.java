@@ -1,6 +1,7 @@
 package com.example21.collectionstream;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -40,7 +41,7 @@ public class StreamTest {
     /**
      * 原实现。返回指定颜色的全部苹果
      */
-    private static List<Apple> getRedApples(Apple.Color c) {
+    private static List<Apple> listApples(Apple.Color c) {
         List<Apple> reds = new ArrayList<>();
         for (Apple a : APPLES) {
             if (c == a.getColor()) {
@@ -60,7 +61,7 @@ public class StreamTest {
     private static List<Apple> filter(Apple.Color c) {
         return APPLES.stream()
                 .filter(a -> a.getColor() == c)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     /**
@@ -73,7 +74,7 @@ public class StreamTest {
         APPLES.stream()
                 .filter(a -> a.getColor() == c)
                 .filter(a -> a.getWeight() >= weight)
-                .collect(Collectors.toList())
+                .toList()
                 .forEach(a -> System.out.println(a.getId()));
 
     }
@@ -86,7 +87,7 @@ public class StreamTest {
     private static void map() {
         APPLES.stream()
                 .map(Apple::getWeight)
-                .collect(Collectors.toList())
+                .toList()
                 .forEach(System.out::println);
 
     }
@@ -97,7 +98,7 @@ public class StreamTest {
     private static void sorted() {
         APPLES.stream()
                 .sorted(Comparator.comparing(Apple::getWeight))
-                .collect(Collectors.toList())
+                .toList()
                 .forEach(a -> System.out.println(a.getWeight()));
     }
 
@@ -107,7 +108,7 @@ public class StreamTest {
     private static void sortedReversed() {
         APPLES.stream()
                 .sorted(Comparator.comparing(Apple::getId).reversed())
-                .collect(Collectors.toList())
+                .toList()
                 .forEach(a -> System.out.println(a.getId()));
     }
 
@@ -117,7 +118,7 @@ public class StreamTest {
     private static void collect() {
         APPLES.stream()
                 .map(Apple::getColor)
-                .collect(Collectors.toList())
+                .toList()
                 .forEach(System.out::println);
 
     }
@@ -138,6 +139,12 @@ public class StreamTest {
     private static void collectGroupingBy2() {
         APPLES.stream()
                 .collect(Collectors.toMap(Apple::getId, a -> a))
+                .forEach((k, v) -> {
+                    System.out.println(k + "/" + v.getColor());
+                });
+
+        APPLES.stream()
+                .collect(Collectors.toMap(Apple::getId, Function.identity()))
                 .forEach((k, v) -> {
                     System.out.println(k + "/" + v.getColor());
                 });
@@ -175,7 +182,7 @@ public class StreamTest {
         List<Apple> apples2 = newApples.stream()
                 .filter(a -> oldApples.stream()
                         .anyMatch(oa -> oa.getId() == a.getId()))
-                .collect(Collectors.toList());
+                .toList();
 
         apples2.forEach(a -> System.out.println(a.getId()));
     }

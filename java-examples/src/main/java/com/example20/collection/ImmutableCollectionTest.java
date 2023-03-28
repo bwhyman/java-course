@@ -7,7 +7,7 @@ public class ImmutableCollectionTest {
     public static void main(String[] args) {
         // getImmutableList();
         // getImmutableList2();
-getImmutableMap();
+        getImmutableMap();
     }
 
     /**
