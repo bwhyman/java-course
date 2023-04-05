@@ -12,6 +12,7 @@
         <module>java-examples</module>
         <module>java-experiments</module>
         <module>java-homeworks</module>
+        <module>java-algorithms</module>
     </modules>
 
 

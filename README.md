@@ -36,6 +36,7 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
  - /java-examples，课程示例  
  - /java-experiments，课程实验  
  - /java-homeworks，课程作业
+ - /java-algorithms，算法练习
 
 ### Related Courses
 - https://github.com/bwhyman/java-course
