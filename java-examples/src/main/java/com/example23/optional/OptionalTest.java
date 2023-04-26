@@ -7,12 +7,11 @@ public class OptionalTest {
     public static void main(String[] args) {
         //ifPresent(null);
         //map(null);
-        //or(new USB("3.0"));
-        getVersion2(new Computer(new Soundcard(new USB("3.0"))));
+        or(new USB("3.0"));
+        //getVersion2(new Computer(new Soundcard(new USB("3.0"))));
     }
 
     /**
-     *
      * @param com
      * @return
      */
@@ -44,6 +43,7 @@ public class OptionalTest {
     /**
      * 打印传入的usb版本。传入的usb对象可能为空
      * 仅不为空执行，执行时既然可能空引用
+     *
      * @param usb
      */
     private static void ifPresent(USB usb) {
@@ -79,6 +79,7 @@ public class OptionalTest {
 
     /**
      * 基于map映射usb版本，打印
+     *
      * @param usb
      */
     private static void map(USB usb) {
@@ -95,29 +96,26 @@ public class OptionalTest {
     private static void or(USB usb) {
         Optional.of(usb)
                 .filter(u -> !"UNKNOWN".equals(u.getVersion()))
-                .or(() -> {
-                    return Optional.of(new USB("1.1"));
-                })
-                .ifPresent(u -> System.out.println(u.getVersion()));
-
+                .or(() -> Optional.of(new USB("1.1")))
+                .map(USB::getVersion)
+                .ifPresent(System.out::println);
     }
 
     /**
-     * 如果usb为空，创建usb 1.1
+     * 如果usb版本为空，返回UNKNOWN
      * 获取版本
      *
      * @param usb
      */
     private static void orElse(USB usb) {
         String v1 = Optional.ofNullable(usb)
-                .orElseGet(() -> {
-                    return new USB("1.1");
-                }).getVersion();
+                .map(USB::getVersion)
+                .orElseGet(() -> "UNKNOWN");
         System.out.println(v1);
 
         String v2 = Optional.ofNullable(usb)
-                .orElse(new USB("1.1"))
-                .getVersion();
+                .map(USB::getVersion)
+                .orElse("UNKNOWN");
         System.out.println(v2);
 
     }
@@ -134,6 +132,7 @@ public class OptionalTest {
 
     /**
      * 获取Computer的usb版本
+     *
      * @param com
      */
     private static void getVersion2(Computer com) {

@@ -148,7 +148,6 @@ public class StreamTest {
                 .forEach((k, v) -> {
                     System.out.println(k + "/" + v.getColor());
                 });
-
     }
 
     /**

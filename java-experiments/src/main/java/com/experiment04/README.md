@@ -13,7 +13,8 @@
 在com.experiment04.entity下，创建Student实体类。包含，id，姓名，性别等属性  
 在com.experiment04.resource下，创建DatabaseUtils类，添加模拟若干对象  
 在com.experiment04.service下，StudentService接口中已声明基于集合流操作的方法    
-在com.experiment04.service.impl下，创建StudentService接口的实现类StudentServiceImpl，基于集合stream等操作，按接口方法注释需求实现   
+在com.experiment04.service.impl下，创建StudentService接口的实现类StudentServiceImpl，
+在接口实现类StudentServiceImpl中，调用DatabaseUtils类获取集合资源(对外隐藏数据源)，基于集合stream等操作，按接口方法注释需求实现   
 理解项目的包结构  
 
 在com.experiment04下，创建Test类  

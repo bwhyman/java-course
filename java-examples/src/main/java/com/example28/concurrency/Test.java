@@ -1,6 +1,7 @@
 package com.example28.concurrency;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 public class Test {
     public static void main(String[] args) throws InterruptedException {
@@ -35,6 +36,25 @@ public class Test {
                     System.out.println(i);
                     try {
                         Thread.sleep(1000);
+                    } catch (InterruptedException ignored) {
+                    }
+                }
+            }
+        }).start();
+        System.out.println("main thread ending");
+    }
+
+    //
+    private static void getThreadSleep2() {
+        System.out.println("main thread running");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int amount = 5;
+                for (int i = 0; i < amount; i++) {
+                    System.out.println(i);
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
                     } catch (InterruptedException ignored) {
                     }
                 }
