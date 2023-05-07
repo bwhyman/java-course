@@ -28,7 +28,7 @@ public class IOTest {
 
         System.out.println("--------- 基于NIO实现文件的复制 ----------");
         String toFile2 = "C:/example/nio/to.txt";
-        // copyByIO(fileName, toFile2);
+        // copyByNIO(fileName, toFile2);
 
         System.out.println("---------- 删除指定文件 -------------");
         // deleteFile(toFile);
