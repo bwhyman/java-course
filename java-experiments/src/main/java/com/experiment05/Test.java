@@ -10,10 +10,10 @@ import java.util.Optional;
 
 public class Test {
     public static void main(String[] args) {
-        // getCollegeName(DatabaseUtils.getStudents().get(0));
-        // System.out.println(isTeacher(DatabaseUtils.getStudents().get(0), "曾志优"));
-        // System.out.println(getCourseName(DatabaseUtils.getStudents(),8888));
-        // printCollegeName(DatabaseUtils.getStudents(), 201001, 1002);
+        // getCollegeName(DatabaseUtils.listStudents().get(0));
+        // System.out.println(isTeacher(DatabaseUtils.listStudents().get(0), "曾志优"));
+        // System.out.println(getCollegeName(DatabaseUtils.listStudents(),8888));
+        // printCollegeName(DatabaseUtils.listStudents(), 201001, 1002);
     }
 
     /**
