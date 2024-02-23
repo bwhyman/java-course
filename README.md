@@ -40,6 +40,7 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
 
 ### Related Courses
 - https://github.com/bwhyman/java-course
+- https://github.com/bwhyman/web-course
 - https://github.com/bwhyman/springboot-course
 - https://github.com/bwhyman/vite-vue3-examples
 - https://github.com/bwhyman/flutter_examples

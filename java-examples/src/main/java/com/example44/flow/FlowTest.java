@@ -89,8 +89,9 @@ public class FlowTest {
         MySubscriber s2 = new MySubscriber(latch);
         publisher.subscribe(s1);
         publisher.subscribe(s2);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 300; i++) {
             publisher.submit(i);
+            System.out.println("publisher.submit: " + i);
         }
         publisher.close();
         latch.await();

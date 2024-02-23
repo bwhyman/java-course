@@ -15,7 +15,6 @@ public class StringTest {
         // getStringBuilder();
         // geteff();
         //stringSplicingTest();
-        stringFormatted();
     }
 
     private static void stringEquals() {
@@ -104,9 +103,9 @@ public class StringTest {
         String fileName = "Lecture01.pptx";
         int index = fileName.lastIndexOf(".");
         System.out.println("文件名称：" +
-                fileName.substring(0, index));
+                           fileName.substring(0, index));
         System.out.println("文件扩展名：" +
-                fileName.substring(index + 1));
+                           fileName.substring(index + 1));
     }
 
     private static void getReplace() {
@@ -161,20 +160,5 @@ public class StringTest {
         System.out.println("Total: " + n1 + n2);
         // 由于括号的优先级高，因此先执行计算，后按字符串拼接
         System.out.println("Total: " + (n1 + n2));
-    }
-
-    private static void stringFormatted() {
-        String name = "BO";
-        String address = "956";
-        String clazz = "2班";
-        String sex = "male";
-        String str = "用户名：" + name + "；地址：" + address + "；班级：" + clazz + "；性别：" + sex + "。";
-        System.out.println(str);
-
-        String str2 = "用户名：%s；地址：%s；班级：%s；性别：%s。";
-        String result = str2.formatted(name, address, clazz, sex);
-        System.out.println(result);
-        String str3 = "%s完成度为100%%";
-        System.out.println(str3.formatted(clazz));
     }
 }
