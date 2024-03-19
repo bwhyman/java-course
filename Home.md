@@ -17,8 +17,6 @@
 有以下两种idea激活方法：通过校邮箱申请免费授权，破解激活
 
 ## Free Educational Licenses
-如，校email或教育授权申请失败，只能尝试破解方法激活idea
-
 Idea Ultimate，为功能强大的付费版开发工具，但全球学生均可申请免费授权。
 
 中国高校域名email，是受国际承认的正式的学生标识，许多公司(google/apple/amazon等)均为全球在读学生提供各种免费服务。
@@ -38,7 +36,7 @@ https://mail.nefu.edu.cn/coremail/
 
  idea学生免费授权计划申请
 
-https://www.jetbrains.com/zh/student/
+https://www.jetbrains.com/shop/eform/students
 
 使用学校email注册idea账号，建议idea账号即为email地址。注册成功后，idea向邮箱发送验证链接，接收到邮件可能有**20分钟的时间延长**
 
@@ -46,18 +44,22 @@ https://www.jetbrains.com/zh/student/
 
 ![image-20210302141817487](images/Home/image-20210302141817487.png)
 
+输入学校邮箱创建的idea账号登录，进入welcome页面
+
+![image-20210302142826048](images/Home/image-20210302142826048.png)
+
+## 基于学信网申请IDEA Ultimate授权
+如学校信箱始终无法收到认证信息，可使用国家学信网信息申请。[详细方法](./student_register.md)
+
+## IDEA Crack
+如学校信箱，学信网信箱均无法获取授权，教学群下载ja-netfilter-all.zip。解压到合适目录，按激活方法破解激活
+
+## Unzip IDEA
 解压缩ideaIU-X.win.zip(文件名以下载版本为准)，到合适目录。例如，D:\idea
 
 ![image-20210302141951518](images/Home/image-20210302141951518.png)
 
 运行D:\idea\bin\idea64.exe，启动idea。
-
-输入学校邮箱创建的idea账号登录，进入welcome页面
-
-![image-20210302142826048](images/Home/image-20210302142826048.png)
-
-## IDEA Crack
-教学群下载ja-netfilter-all.zip。解压到合适目录，按激活方法破解激活
 
 # IDEA Maven Settings
 
