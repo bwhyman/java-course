@@ -1,9 +1,8 @@
-
 # Prerequisites
 
-教学群/学习通资源，下载2个文件准备。ideaIU-X.win.zip，settings.xml。  
+教学群/学习通资源，下载2个文件准备。ideaIU-X.win.zip，settings.xml。
 
-不要着急运行idea，按以下步骤配置！~
+不要着急运行idea，先按以下步骤配置Maven，申请idea授权！~
 
 # Maven & Settings
 
@@ -12,14 +11,16 @@
 [视频：Maven的本地配置](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=726850150)
 
 # IntelliJ IDEA
+
 **卸载系统中曾经安装过的Oracle JDK。idea已集成openjdk，无需安装**
 
-有以下两种idea激活方法：通过校邮箱申请免费授权，破解激活
+IDEA Ultimate是功能强大的付费版开发工具，但全球学生均可申请免费授权。
 
-## Free Educational Licenses
-Idea Ultimate，为功能强大的付费版开发工具，但全球学生均可申请免费授权。
+通过以下两种方式之一申请idea免费授权：校邮箱，学信网。  
 
-中国高校域名email，是受国际承认的正式的学生标识，许多公司(google/apple/amazon等)均为全球在读学生提供各种免费服务。
+### Free IDEA Educational Licenses
+
+中国高校域名邮箱`@edu.cn`，是受国际承认的正式的学生标识，许多公司(google/apple/amazon等)均为全球在读学生提供各种免费服务。
 
 按国际惯例，邮箱账号为：名缩写+.+姓+数字，账号已被注册，则数字+1。
 例如，账号：张小明，x.m.zhang17。Email地址：x.m.zhang17@nefu.edu.cn
@@ -44,22 +45,27 @@ https://www.jetbrains.com/shop/eform/students
 
 ![image-20210302141817487](images/Home/image-20210302141817487.png)
 
-输入学校邮箱创建的idea账号登录，进入welcome页面
+### 基于学信网申请IDEA Ultimate授权
 
-![image-20210302142826048](images/Home/image-20210302142826048.png)
+如学校邮箱始终无法收到认证信息，可使用国家学信网信息申请。[详细方法](./student_register.md)
 
-## 基于学信网申请IDEA Ultimate授权
-如学校信箱始终无法收到认证信息，可使用国家学信网信息申请。[详细方法](./student_register.md)
+### IDEA Crack
 
-## IDEA Crack
-如学校信箱，学信网信箱均无法获取授权，教学群下载ja-netfilter-all.zip。解压到合适目录，按激活方法破解激活
+如学校邮箱学信网信箱均无法获取授权，教学群下载ja-netfilter-all.zip。解压到合适目录，按激活方法破解激活
 
-## Unzip IDEA
+### Unzip IDEA
+
 解压缩ideaIU-X.win.zip(文件名以下载版本为准)，到合适目录。例如，D:\idea
 
 ![image-20210302141951518](images/Home/image-20210302141951518.png)
 
-运行D:\idea\bin\idea64.exe，启动idea。
+运行D:\idea\bin\idea64.exe，启动idea。同时右键点击文件，创建桌面快捷键。  
+
+输入学校邮箱创建的idea账号登录，进入welcome页面
+
+![](images/Home/2024-04-14-17-21-02-image.png)
+
+**先不要创建项目，完成以下配置！~**
 
 # IDEA Maven Settings
 
@@ -70,17 +76,18 @@ https://www.jetbrains.com/shop/eform/students
 [视频：IDEA创建maven java project](https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=217339173&knowledgeId=416970143)
 
 # Optimizing IntelliJ IDEA
+
 优化idea开发环境
 
 ![image-20210302143245749](images/Home/image-20210302143245749.png)
 
-## Code Completion
+### Code Completion
 
 **关闭**代码提示的大小写匹配，提高开发效率
 
 ![image-20201029141538301](images/Home/image-20201029141538301.png)
 
-## Font Size & Style
+### Font Size & Style
 
 自定义代码字体样式及尺寸
 

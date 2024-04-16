@@ -15,6 +15,10 @@ public class HttpClient {
         this.cacheDir = builder.cacheDir;
         this.interceptor = builder.interceptor;
     }
+    public static Builder builder(String host, String port) {
+        return new Builder(host, port);
+    }
+
     public static class Builder {
         // 必选项
         private String host;

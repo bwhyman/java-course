@@ -12,7 +12,7 @@ public class Test {
     }
 
     private static void getBuilder() {
-        HttpClient client = new HttpClient.Builder("www.whyman.site", "8089")
+        HttpClient client = HttpClient.builder("www.whyman.site", "8089")
                 .mainThread(true)
                 .cacheDir("d:/")
                 .build();
