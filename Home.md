@@ -12,7 +12,7 @@
 
 # IntelliJ IDEA
 
-**卸载系统中曾经安装过的Oracle JDK。idea已集成openjdk，无需安装**
+**卸载系统中安装过的JDK，移除设置的系统环境变量java_home。idea已集成openjdk，无需安装**
 
 IDEA Ultimate是功能强大的付费版开发工具，但全球学生均可申请免费授权。
 
@@ -51,7 +51,7 @@ https://www.jetbrains.com/shop/eform/students
 
 ### IDEA Crack
 
-如学校邮箱学信网信箱均无法获取授权，教学群下载ja-netfilter-all.zip。解压到合适目录，按激活方法破解激活
+如学校邮箱学信网信箱均无法获取授权，找授课教师提供指导方案。
 
 ### Unzip IDEA
 
