@@ -22,7 +22,7 @@ public class HappensBeforeOrderTest {
         stop2 = true;
     }
     private static void loopTest3() throws InterruptedException {
-        new Thread(HappensBeforeOrderTest::loop3).start();
+        Thread.ofPlatform().start(HappensBeforeOrderTest::loop3);
         Thread.sleep(500);
         stop3 = true;
     }

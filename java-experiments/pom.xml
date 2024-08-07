@@ -11,10 +11,8 @@
 
     <artifactId>java-experiments</artifactId>
     <properties>
-        <!-- 指定项目开发时支持的版本 -->
-        <maven.compiler.source>17</maven.compiler.source>
-        <!-- 指定项目编译后支持的版本 -->
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

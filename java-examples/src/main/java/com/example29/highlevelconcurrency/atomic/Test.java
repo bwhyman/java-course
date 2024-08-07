@@ -11,10 +11,10 @@ public class Test {
         int count = 8_000;
         CountDownLatch latch = new CountDownLatch(count);
         for (int i = 0; i < count; i++) {
-            new Thread(() -> {
+            Thread.ofPlatform().start(() -> {
                 Counter2.increment();
                 latch.countDown();
-            }).start();
+            });
         }
         latch.await();
         System.out.println(Counter2.value());

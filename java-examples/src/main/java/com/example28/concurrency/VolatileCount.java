@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class VolatileCount {
     private static volatile int c;
-    private static Random r = new Random();
+    private static final Random r = new Random();
     public static void increment() {
         try {
             // 模拟随机的耗时业务操作

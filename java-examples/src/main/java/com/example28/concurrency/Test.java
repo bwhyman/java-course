@@ -164,4 +164,11 @@ public class Test {
         latch.await();
         System.out.println("执行结课：" + VolatileCount.value());
     }
+
+    private static void ofPlatformTest() {
+        Runnable r = () -> System.out.println("hello");
+        // 构建平台线程构造器，并执行任务
+        Thread.ofPlatform()
+                .start(r);
+    }
 }

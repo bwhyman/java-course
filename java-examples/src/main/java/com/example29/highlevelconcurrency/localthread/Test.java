@@ -13,7 +13,7 @@ public class Test {
             System.out.println(Counter3.value());
         };
         for (int i = 0; i < 3; i++) {
-            new Thread(r).start();
+            Thread.ofPlatform().start(r);
         }
     }
 }
