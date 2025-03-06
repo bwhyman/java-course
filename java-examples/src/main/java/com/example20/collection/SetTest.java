@@ -1,13 +1,11 @@
 package com.example20.collection;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SetTest {
     public static void main(String[] args) {
-        getAddElement();
+        //getAddElement();
+        testSequencedSet();
     }
 
     /**
@@ -28,6 +26,24 @@ public class SetTest {
 
         List<User> userList = new ArrayList<>(users);
 
+    }
+
+    private static void testSequencedSet() {
+        SequencedSet<User> users = new LinkedHashSet<>();
+        User user = new User("BO");
+        User user1 = new User("SUN");
+        users.add(user);
+        users.add(user1);
+        System.out.println(users.size());
+        users.add(user);
+        // 按顺序输出
+        for (User u : users) {
+            System.out.println(u.getName());
+        }
+        SequencedSet<User> reversed = users.reversed();
+        for (User u : reversed) {
+            System.out.println(u.getName());
+        }
     }
 
 }

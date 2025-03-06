@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.Comparator;
+import java.util.stream.Stream;
 
 public class FilesTest {
 
@@ -119,28 +120,30 @@ public class FilesTest {
 
     private static void walk() throws IOException {
         Path dir = Path.of("D:/test");
-        Files.walk(dir).forEach(System.out::println);
-        System.out.println("---------");
-        Files.walk(dir, 1).forEach(System.out::println);
+        try (Stream<Path> walk = Files.walk(dir);
+             Stream<Path> walkDepth = Files.walk(dir, 1)) {
+            walk.forEach(System.out::println);
+            System.out.println("---------");
+            walkDepth.forEach(System.out::println);
+        }
     }
 
     /**
      * 删除指定目录路径下的，指定文件
-     *
-     * @throws IOException
      */
     private static void walk2() throws IOException {
         Path file = Path.of("a.txt");
-        Files.walk(BASE_PATH)
-                .filter(p -> p.getFileName().equals(file))
-                .forEach(p -> {
-                    try {
-                        Files.delete(p);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
 
+        try (Stream<Path> walk = Files.walk(BASE_PATH)) {
+            walk.filter(p -> p.getFileName().equals(file))
+                    .forEach(p -> {
+                        try {
+                            Files.delete(p);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    });
+        }
     }
 
     /**
@@ -150,15 +153,16 @@ public class FilesTest {
      * @throws IOException
      */
     private static void deleteDirectory() throws IOException {
-        Files.walk(BASE_PATH)
-                .sorted(Comparator.reverseOrder())
-                .forEach(p -> {
-                    try {
-                        Files.delete(p);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
+        try (Stream<Path> walk = Files.walk(BASE_PATH)) {
+            walk.sorted(Comparator.reverseOrder())
+                    .forEach(p -> {
+                        try {
+                            Files.delete(p);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    });
+        }
     }
 
 
