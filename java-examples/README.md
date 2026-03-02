@@ -1,4 +1,11 @@
 # java Examples
+
+### 2026.03.02
+Java 25
+
+### 2024.08.07
+Java 21; Virtual Threads; Collections, etc
+
 ### 2022.10.18
 Java17 new features
 

@@ -1,4 +1,4 @@
-# Welcome to java Programming Language
+# Welcome to Java Programming Language
 ### Overview
 China, Northeast Forestry University, Software Engineering, java Programming Language.
 
@@ -7,7 +7,7 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
 
 课程基于C/Python/数据结构等课程知识  
 课程将涵盖封装/继承/多态等基本面向对象知识  
-课程基于Java 21学习讨论：
+课程基于`Java 25`学习讨论：
 - Functional Programming/Optional/Stream API/Date-Time API/Files/Concurrency/Virtual Threads/Exceptions等基础技术知识
 - 以及，CompletableFuture异步非阻塞编程/NIO Selector多路复用/NIO SocketChannel异步非阻塞网络编程/Flow反应式编程等技术知识
 
@@ -19,7 +19,7 @@ Java程序设计。此课程为东北林业大学软件工程专业第4学期的
 
 ### Development Environments
  - IntelliJ IDEA Ultimate
- - OpenJDK 21
+ - OpenJDK 25
  - Git
 
 ### Setup Development Environments

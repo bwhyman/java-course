@@ -65,7 +65,7 @@ public class StringTest {
         System.out.println("string3 hash: " + System.identityHashCode(string3));
         System.out.println(string1 == string3);
         string3 = (s1 + s2).intern();
-        System.out.println("string3 hash2: " + System.identityHashCode(string3));
+        System.out.println("string3 hash3: " + System.identityHashCode(string3));
         System.out.println(string1 == string3);
     }
 
