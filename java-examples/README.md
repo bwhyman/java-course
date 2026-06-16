@@ -1,44 +1,48 @@
 # java Examples
 
-### 2026.03.02
+#### 2026-06-16
+
+Structured Task Scope.  
+
+#### 2026-03-02
 Java 25
 
-### 2024.08.07
+#### 2024-08-07
 Java 21; Virtual Threads; Collections, etc
 
-### 2022.10.18
+#### 2022-10-18
 Java17 new features
 
-### 2021.10.22
+#### 2021-10-22
 Java9 Flow Reactive Programming
 
-### 2021.07.02
+#### 2021-07-02
 BIO TCP/UDP; NIO TCP; ServerSocketChannel; SocketChannel; Selector
 
-### 2021.04.19
+#### 2021-04-19
 datetime; concurrency; generic; design pattern  
 
-### 2020.04.22
+#### 2020-04-22
 Initial Orders  
 
-### 2020.04.16
+#### 2020-04-16
 I/O Stream; Byte Array Buffer; AutoCloseable; Paths; Files; 
 
-### 2020.03.31
+#### 2020-03-31
 Interfaces; Default Methods; Anonymous Classes   
 
-### 2020.03.29
+#### 2020-03-29
 Numbers&Strings; Collections; Collection Stream; Functional Interface; Optional; 
 
-### 2020.03.24
+#### 2020-03-24
 Iterator; 
-### 2020.03.23
+#### 2020-03-23
 Collection; List; Set; Map  
 Enum; Static variable & method; constructor; composition; nested class;  
-### 2020.03.07
+#### 2020-03-07
 Operator；Controlflow; Accesslevel; method; Constructor; 
-### 2020.03.05
+#### 2020-03-05
 8+1基本数据类型；数组  
 包/类/主函数的声明
-### 2019.12.31
+#### 2019-12-31
 Hello World
